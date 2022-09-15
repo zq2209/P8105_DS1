@@ -1,6 +1,6 @@
 ---
 title: "Simple document"
-output: word_document
+output: html_document
 ---
 
 ```{r}
@@ -52,7 +52,6 @@ la_df = tibble(
   abs_norm = abs(norm)
 )
 
-ggplot(la_df, aes(x = abs_norm)) + geom_histogram()
 median = median(la_df$norm)
 ```
 
